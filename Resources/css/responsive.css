@@ -1,0 +1,62 @@
+@media only screen and (max-width: 1200px){
+  .container{ 
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 768px){
+  html{
+    font-size: 14px;
+  }
+ .bannerBox{
+   flex-direction: column;
+ }
+ .bannerTextBox{ 
+   order: 1;
+   padding-top: 20px;
+  }
+
+ .bannerTextBox h2,
+ .bannerTextBox p,
+ .bannerTextBox div{
+   text-align: center;
+ }
+
+ .offerBox{ flex-direction: column;}
+
+ .about{ flex-direction: column;}
+
+ .aboutTextBox .smallHeading,
+ .aboutTextBox p,
+ .aboutTextBox h3,
+ .aboutTextBox div{
+   text-align: center;
+ }
+
+ .serviceBox{ flex-direction: column;}
+ .serviceCard {width: 100%;}
+
+ .serviceCard div,
+ .serviceCard h4,
+ .serviceCard p{
+   text-align: center;
+ }
+
+ .projectImageBox{ width: 47%;}
+
+ .form{
+   width: 70%;
+   margin-top: 20px;
+ }
+
+ .links{ flex-direction: column;}
+ .links div{ width: 100%;}
+ .links h4,
+ .links img,
+ .links p,
+ .links li,
+ .responsiveImage{
+   text-align: center;
+ }
+}
