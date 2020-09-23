@@ -9,6 +9,8 @@
   html{
     font-size: 14px;
   }
+
+  nav ul{display: none;}
  .bannerBox{
    flex-direction: column;
  }
@@ -59,4 +61,43 @@
  .responsiveImage{
    text-align: center;
  }
+}
+
+@media only screen and (max-width: 360px){
+  html{ font-size: 12px;}
+
+  #header{ margin-top: 20px;}
+  .bannerImageBox img{
+    width: 250px;
+    height: auto;
+  }
+
+ .hamburger{ display: block;}
+
+ .line{
+    width: 30px;
+    height: 3px;
+    background: #709d61;
+    margin: 5px;
+  }
+
+  .aboutImageBo img{
+    width: 250px;
+    height: auto;
+  }
+
+  .projectsImageBoxes{ flex-direction: column;}
+  .projectImageBox{ width: 95%;}
+
+  .testimonialBox{ flex-direction: column;}
+
+  .testimonialsContent img{ display: none;}
+
+  .testimonialsContent p,
+  .testimonialsContent div{
+    text-align: center;
+  }
+
+  .form{ width: 90%;}
+  input[type='email']{ width: 60%;}
 }

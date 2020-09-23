@@ -134,6 +134,7 @@ h1{align-self: center;}
   margin-left: 15px;
 }
 
+.hamburger{display: none;}
 .headerBox a{ transition: all 0.5s ease;}
 .headerBox a:hover{ color: #709d61; }
 
@@ -256,7 +257,7 @@ h1{align-self: center;}
 
 .testimonialsContent p{ padding-bottom: 20px;}
 
-.testimonialsContent span{ 
+.testimonialsContent div{ 
   font-size: 125%;
   font-family: 'Manrope-Bold';
 }
