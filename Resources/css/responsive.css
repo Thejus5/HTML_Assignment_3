@@ -10,6 +10,15 @@
     font-size: 14px;
   }
 
+  .hamburger{ display: block;}
+
+ .line{
+    width: 30px;
+    height: 3px;
+    background: #709d61;
+    margin: 5px;
+  }
+
   nav ul{display: none;}
  .bannerBox{
    flex-direction: column;
@@ -39,7 +48,7 @@
  .serviceBox{ flex-direction: column;}
  .serviceCard {width: 100%;}
 
- .serviceCard div,
+ .serviceCard div{ margin: 0 auto;}
  .serviceCard h4,
  .serviceCard p{
    text-align: center;
@@ -63,22 +72,13 @@
  }
 }
 
-@media only screen and (max-width: 360px){
-  html{ font-size: 12px;}
+@media only screen and (max-width: 416px){
+  html{ font-size: 14px;}
 
   #header{ margin-top: 20px;}
   .bannerImageBox img{
-    width: 250px;
+    width: 300px;
     height: auto;
-  }
-
- .hamburger{ display: block;}
-
- .line{
-    width: 30px;
-    height: 3px;
-    background: #709d61;
-    margin: 5px;
   }
 
   .aboutImageBo img{
@@ -91,12 +91,14 @@
 
   .testimonialBox{ flex-direction: column;}
 
-  .testimonialsContent img{ display: none;}
+  .quotesBox{ display: none;}
 
   .testimonialsContent p,
   .testimonialsContent div{
     text-align: center;
   }
+
+  .testimonialsImage{ margin: 0 auto;}
 
   .form{ width: 90%;}
   input[type='email']{ width: 60%;}

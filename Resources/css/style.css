@@ -1,4 +1,23 @@
-/* Base color: #709d61*/
+@charset "utf-8";
+/* CSS Document */
+
+/* CSS DocumentProject: Gardener Website
+----------------------------------------------------------------------------------------------------------*/
+
+/*------------------Layout,Table of Contents-----------------------------------------------------------------
+1. BASIC STYLING FOR COMMON HTML ELEMENTS
+2. REUSED ITEMS
+3. HEADER
+4. BANNER
+5. OFFERS
+6. ABOUT
+7. SERVICES
+8. PROJECTS
+9. TESTIMONIALS
+10. NEWSLETTER
+11. FOOTER
+-----------------------------------------------------------------------------------------------------------*/
+
 /* -------------------------------- */
 /* 1. BASIC STYLING */
 /* -------------------------------- */
@@ -83,7 +102,6 @@ h4{
 .btn{
   display: inline-block;
   padding: 10px 20px;
-  font-weight: 700;
   text-decoration: none;
   border-radius: 5px;
   font-size: 80%;
@@ -110,9 +128,7 @@ h4{
   color: #fff;
 }
 
-main{
-  margin-bottom: 100px;
-}
+main{ margin-bottom: 100px; }
 
 /* -------------------------------- */
 /* 3. Header */
@@ -123,6 +139,7 @@ main{
   justify-content: space-between;
   align-content: center;
 }
+
 h1{align-self: center;}
 
 .headerBox ul{ padding: 10px 0;}
@@ -168,8 +185,20 @@ h1{align-self: center;}
   transition: all 0.2s ease;
 }
 .offerCards:hover{ background-color: #fff;}
-.offerCards img{
-  padding: 40px 0;
+
+.offerCards div{
+  margin: 0 auto;
+  background-color: #efefef;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.offerCards img{ 
+  padding: 20px 20px;
+  width: 100%; 
+  height: 100%;
+  object-position: center;
 }
 
 /* -------------------------------- */
@@ -195,11 +224,22 @@ h1{align-self: center;}
   transition: all 0.5s ease;
 }
 
-.serviceCard img{ padding: 40px 0; }
-
-.serviceCard:hover{
-  background-color: #fff;
+.serviceCard div{
+  background-color: #efefef;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
 }
+
+.serviceCard img{ 
+  padding: 20px 20px;
+  width: 100%; 
+  height: 100%;
+  object-position: center;
+}
+
+.serviceCard:hover{ background-color: #fff; }
 
 /* -------------------------------- */
 /* 8. Projects */
@@ -239,9 +279,7 @@ h1{align-self: center;}
 }
 .testimonialBox{ padding: 20px 0;}
 
-.testimonialsImage{
-  padding: 10px;
-}
+.testimonialsImage{ padding: 10px; }
 
 .testimonialsImage img{
   width: 300px;
@@ -249,26 +287,34 @@ h1{align-self: center;}
   border-radius: 10px;
 }
 
-.testimonialsContent{
-  padding: 10px 15px;
+.testimonialsContent{ padding: 10px 15px; }
+
+.quotesBox{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #6f9670;
+  overflow: hidden;
 }
 
-.testimonialsContent img{ padding-bottom: 10px;}
+.testimonialsContent img{ 
+  /* padding-bottom: 10px; */
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
 
 .testimonialsContent p{ padding-bottom: 20px;}
 
-.testimonialsContent div{ 
-  font-size: 125%;
-  font-family: 'Manrope-Bold';
-}
+.testimonialsContent div{ font: 125% 'Manrope-Bold'; }
 
 /* -------------------------------- */
 /* 10. Newsletter */
 /* -------------------------------- */
 
-.newsletter{
-  background-color: #e9e9e9;
-}
+.newsletter{ background-color: #e9e9e9; }
 
 .form{
   width: 40%;
@@ -297,36 +343,30 @@ input[type='button']{
 /* 11. Footer */
 /* -------------------------------- */
 hr{ opacity: 0.2;}
+
 .links{ padding-bottom: 0;}
 
-.gardenerLogo img{
-  padding: 15px 0;
-}
+.gardenerLogo img{padding: 15px 0; }
+
 .links div{
   width: 25%;
   padding: 10px;
 }
 
-.links ul{
-  list-style: none;
-}
+.links ul{ list-style: none; }
 
 .links ul li{
-  font-size: 100%;
-  font-family: 'Manrope-Medium';
+  font: 100% 'Manrope-Medium';
   opacity: 0.8;
   padding: 5px 0;
 }
 
-.contact2 li{
-  justify-content: space-between;
-}
+.contact2 li{ justify-content: space-between; }
 
 .greenFooterText{ color: #709d61;}
 
-.copyrightBox{
-  padding: 0;
-}
+.copyrightBox{ padding: 0; }
+
 .copyrightBox p{
   padding: 10px;
   font-size: 87.5%;
