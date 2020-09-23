@@ -24,6 +24,7 @@
 *{
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -58,7 +59,7 @@ html {
 /* -------------------------------- */
 /* 2. Reused items */
 /* -------------------------------- */
-.flexBox{ display: flex;}
+.flexBox{ display: -webkit-box; display: -ms-flexbox; display: flex;}
 
 .centeredText{ text-align: center;}
 
@@ -105,7 +106,10 @@ h4{
   text-decoration: none;
   border-radius: 5px;
   font-size: 80%;
+  -webkit-transition: -webkit-transform 0.2s ease;
+  transition: -webkit-transform 0.2s ease;
   transition: transform 0.2s ease;
+  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
 }
 
 .btn-full{
@@ -117,10 +121,12 @@ h4{
 .btn-ghost{
   border: 1px solid #709d61;
   color: #709d61;
+  -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
 
 .btn-full:hover{
+  -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
 .btn-ghost:hover{ 
@@ -136,23 +142,27 @@ main{ margin-bottom: 100px; }
 
 .headerBox{ 
   padding: 1%;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -ms-flex-line-pack: center;
   align-content: center;
 }
 
-h1{align-self: center;}
+h1{-ms-flex-item-align: center;align-self: center;}
 
 .headerBox ul{ padding: 10px 0;}
 
 .headerBox ul li{ 
   display: inline-block;
   font-family: 'Manrope-Medium';
+  -ms-flex-item-align: center;
   align-self: center;
   margin-left: 15px;
 }
 
 .hamburger{display: none;}
-.headerBox a{ transition: all 0.5s ease;}
+.headerBox a{ -webkit-transition: all 0.5s ease; transition: all 0.5s ease;}
 .headerBox a:hover{ color: #709d61; }
 
 /* -------------------------------- */
@@ -182,6 +192,7 @@ h1{align-self: center;}
 
 .offerCards{
   padding: 10px;
+  -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
 .offerCards:hover{ background-color: #fff;}
@@ -198,6 +209,7 @@ h1{align-self: center;}
   padding: 20px 20px;
   width: 100%; 
   height: 100%;
+  -o-object-position: center;
   object-position: center;
 }
 
@@ -217,10 +229,11 @@ h1{align-self: center;}
 /* -------------------------------- */
 /* 7. Serveces */
 /* -------------------------------- */
-.serviceBox{ flex-wrap: wrap;}
+.serviceBox{ -ms-flex-wrap: wrap; flex-wrap: wrap;}
 .serviceCard{
   width: 33%;
   padding: 10px;
+  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
@@ -236,6 +249,7 @@ h1{align-self: center;}
   padding: 20px 20px;
   width: 100%; 
   height: 100%;
+  -o-object-position: center;
   object-position: center;
 }
 
@@ -246,6 +260,7 @@ h1{align-self: center;}
 /* -------------------------------- */
 
 .projectsImageBoxes{ 
+  -ms-flex-wrap: wrap; 
   flex-wrap: wrap;
   margin-top: 20px;
 }
@@ -261,12 +276,15 @@ h1{align-self: center;}
 .projectImageBox img{
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
   object-fit: cover;
+  -o-object-position: center;
   object-position: center;
+  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
-.projectImageBox img:hover{ transform: scale(1.1);}
+.projectImageBox img:hover{ -webkit-transform: scale(1.1); transform: scale(1.1);}
 
 
 /* -------------------------------- */
@@ -302,7 +320,9 @@ h1{align-self: center;}
   padding: 10px;
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
   object-fit: cover;
+  -o-object-position: center;
   object-position: center;
 }
 
@@ -322,6 +342,8 @@ h1{align-self: center;}
   background-color: #fff;
   padding: 10px;
   border-radius: 10px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 input[type='email']{
@@ -332,6 +354,16 @@ input[type='email']{
 input[type='button']{
   font-size: 125%;
   outline: none;
+}
+
+::-webkit-input-placeholder{
+  font-size: 112.5%;
+  opacity: 0.7;
+}
+
+:-ms-input-placeholder{
+  font-size: 112.5%;
+  opacity: 0.7;
 }
 
 ::placeholder{
@@ -361,7 +393,7 @@ hr{ opacity: 0.2;}
   padding: 5px 0;
 }
 
-.contact2 li{ justify-content: space-between; }
+.contact2 li{ -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
 
 .greenFooterText{ color: #709d61;}
 
