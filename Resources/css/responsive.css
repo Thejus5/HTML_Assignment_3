@@ -5,6 +5,7 @@
   }
 }
 
+/*----------- Tablets --------------*/
 @media only screen and (max-width: 768px){
   html{
     font-size: 14px;
@@ -77,6 +78,36 @@
  }
 }
 
+/*----------- Surface duo --------------*/
+@media only screen and (max-width: 540px){
+  #header{ margin-top: 20px;}
+
+  .bannerImageBox img{
+    width: 350px;
+    height: auto;
+  }
+
+  .aboutImageBo img{
+    width: 300px;
+    height: auto;
+  }
+
+  .projectImageBox {width: 100%;}
+
+  .testimonialBox{ flex-direction: column; }
+
+  .quotesBox{ display: none;}
+
+  .testimonialsContent p,
+  .testimonialsContent div{
+    text-align: center;
+  }
+
+  .testimonialsImage{ margin: 0 auto;}
+
+}
+
+/*----------- Mobile resolution --------------*/
 @media only screen and (max-width: 416px){
   html{ font-size: 14px;}
 
@@ -107,4 +138,26 @@
 
   .form{ width: 90%;}
   input[type='email']{ width: 60%;}
+}
+
+/*----------- Galaxy Fold --------------*/
+@media only screen and (max-width: 280px){
+  html{font-size: 12px;}
+  .bannerImageBox img{
+    width: 200px;
+    height: auto;
+  }
+  .bannerImageBox{ padding: 0;}
+
+  .testimonialsImage img{
+    width: 200px;
+    height: auto;
+  }
+
+  .form{ flex-direction: column;}
+  input[type='email']{
+    width: 100%;
+    padding: 10px 0;
+  }
+
 }
