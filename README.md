@@ -2,6 +2,7 @@
 Third HTML5 assignment for creating a website based on given layout.
 
 >Author: Thejus S
+
 >The final output of the project: [Gardener](https://thejus5.github.io/ "Gardener")
 
 ## Technologies Used
