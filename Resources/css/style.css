@@ -299,9 +299,9 @@ h1{-ms-flex-item-align: center;align-self: center;}
 }
 .testimonialBox{ padding: 20px 0;}
 
-.testimonialsImage{ padding: 10px; }
+.clientImage{ padding: 10px; }
 
-.testimonialsImage img{
+.clientImage img{
   width: 300px;
   height: auto;
   border-radius: 10px;
