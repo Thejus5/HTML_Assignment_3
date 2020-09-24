@@ -1,2 +1,3 @@
 # HTML_Assignment_3
-Third HTML assignment
+Author: Thejus S
+Technologies used: HTML5, CSS3
