@@ -116,6 +116,7 @@ h4{
   background-color: #709d61;
   border: 1px solid #709d61;
   color: #fff;
+  transition: all 0.2s ease;
 }
 
 .btn-ghost{
@@ -126,8 +127,9 @@ h4{
 }
 
 .btn-full:hover{
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+  border: 1px solid #709d61;
+  color: #709d61;
+  background-color: #fff;
 }
 .btn-ghost:hover{ 
   background-color: #709d61;
