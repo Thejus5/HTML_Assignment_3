@@ -6,10 +6,12 @@
 }
 
 /*----------- Tablets --------------*/
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 991px){
   html{
     font-size: 14px;
   }
+
+  #header{ margin-top: 20px;}
 
   .hamburger{ display: block;}
 
@@ -31,8 +33,10 @@
    -webkit-box-ordinal-group: 2; 
    -ms-flex-order: 1; 
    order: 1;
-   padding-top: 20px;
+   padding-top: 0;
   }
+
+  .bannerImageBox{ padding: 0;}
 
  .bannerTextBox h2,
  .bannerTextBox p,
@@ -52,7 +56,15 @@
  }
 
  .serviceBox{ -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column;}
- .serviceCard {width: 100%;}
+ .serviceCard {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .serviceCard p{
+    margin: 0 auto; 
+    width: 90%;
+  }
 
  .serviceCard div{ margin: 0 auto;}
  .serviceCard h4,
@@ -62,8 +74,13 @@
 
  .projectImageBox{ width: 47%;}
 
+ .testimonialsContent p,
+ .testimonialsContent div{ text-align: center;}
+
+ .quotesBox{ margin-bottom: 20px;}
+
  .form{
-   width: 70%;
+   width: 60%;
    margin-top: 20px;
  }
 
@@ -76,10 +93,12 @@
  .responsiveImage{
    text-align: center;
  }
+
+ .contactTime li{ justify-content: space-between;}
 }
 
 /*----------- Surface duo --------------*/
-@media only screen and (max-width: 540px){
+@media only screen and (max-width: 767px){
   #header{ margin-top: 20px;}
 
   .bannerImageBox img{
@@ -92,7 +111,7 @@
     height: auto;
   }
 
-  .projectImageBox {width: 100%;}
+  .projectImageBox {width: 47%;}
 
   .testimonialBox{ flex-direction: column; }
 
@@ -103,12 +122,12 @@
     text-align: center;
   }
 
-  .testimonialsImage{ margin: 0 auto;}
+  .clientImage{ margin: 0 auto;}
 
 }
 
 /*----------- Mobile resolution --------------*/
-@media only screen and (max-width: 416px){
+@media only screen and (max-width: 420px){
   html{ font-size: 14px;}
 
   #header{ margin-top: 20px;}
@@ -134,22 +153,28 @@
     text-align: center;
   }
 
-  .testimonialsImage{ margin: 0 auto;}
+  .clientImage{ margin: 0 auto;}
 
   .form{ width: 90%;}
-  input[type='email']{ width: 60%;}
+  input[type='email']{ 
+    width: 60%;
+    text-overflow: ellipsis;
+    
+    white-space: nowrap;
+    overflow: hidden;
+  }
 }
 
 /*----------- Galaxy Fold --------------*/
-@media only screen and (max-width: 280px){
+@media only screen and (max-width: 320px){
   html{font-size: 12px;}
   .bannerImageBox img{
-    width: 200px;
+    width: 250px;
     height: auto;
   }
   .bannerImageBox{ padding: 0;}
 
-  .testimonialsImage img{
+  .clientImage img{
     width: 200px;
     height: auto;
   }
