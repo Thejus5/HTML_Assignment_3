@@ -127,9 +127,9 @@ h4{
 }
 
 .btn-full:hover{
-  border: 1px solid #709d61;
   color: #709d61;
   background-color: #fff;
+  border: 1px solid #709d61;
 }
 .btn-ghost:hover{ 
   background-color: #709d61;
@@ -179,25 +179,14 @@ h1{-ms-flex-item-align: center;align-self: center;}
 
 .bannerTextBox span{ color: #709d61;}
 
-.bannerTextBox{ 
-  width: 50%;
-  padding-top: 90px;
-}
+.bannerTextBox{ padding-top: 90px; }
 
-.bannerImageBox{
-  padding: 20px;
-  /* background-color: #000; */
-  background-image: url(../images/img-1.jpg);
-  width: 50%;
-  height: 450px;
-  background-position: center;
-  background-size: cover;
-}
+.bannerImageBox{ padding: 20px;}
 
-/* .bannerImageBox img{
+.bannerImageBox img{
   width: 600px;
   height: auto;
-} */
+}
 
 /* -------------------------------- */
 /* 5. Offers */
@@ -230,25 +219,13 @@ h1{-ms-flex-item-align: center;align-self: center;}
 /* 6. About */
 /* -------------------------------- */
 
-.aboutTextBox{ 
-  padding: 10px;
-  width: 50%;
-}
+.aboutTextBox{ padding: 10px;}
 
 .aboutTextBox a{ margin-top: 35px;}
 
 .aboutTextBox h3{
   font-size: 281%;
   padding-bottom: 35px;
-}
-
-.aboutImageBo{
-  padding: 10px;
-  width: 50%;
-  height: 450px;
-  background-image: url(../images/img-2.jpg);
-  background-position: center;
-  background-size: cover;
 }
 
 /* -------------------------------- */
@@ -430,9 +407,9 @@ hr{ opacity: 0.2;}
 
 .links{ padding-bottom: 0;}
 
-.gardenerLogo img{padding: 15px 0; }
+.gardenerLogo p{ opacity: 0.5;}
 
-.gardenerLogo p{opacity: 0.5;}
+.gardenerLogo img{padding: 15px 0; }
 
 .links div{
   width: 25%;
@@ -447,7 +424,7 @@ hr{ opacity: 0.2;}
   padding: 5px 0;
 }
 
-.contactTime li{ -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+.contact2 li{ -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
 
 .greenFooterText{ color: #709d61;}
 
