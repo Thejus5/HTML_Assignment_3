@@ -1,0 +1,188 @@
+@media only screen and (max-width: 1200px){
+  .container{ 
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+/*----------- Tablets --------------*/
+@media only screen and (max-width: 991px){
+  html{
+    font-size: 14px;
+  }
+
+  #header{ margin-top: 20px;}
+
+  .hamburger{ display: block;}
+
+ .line{
+    width: 30px;
+    height: 3px;
+    background: #709d61;
+    margin: 5px;
+  }
+
+  nav ul{display: none;}
+ .bannerBox{
+   -webkit-box-orient: vertical;
+   -webkit-box-direction: normal;
+   -ms-flex-direction: column;
+   flex-direction: column;
+ }
+ .bannerTextBox{ 
+   -webkit-box-ordinal-group: 2; 
+   -ms-flex-order: 1; 
+   order: 1;
+   padding-top: 0;
+  }
+
+  .bannerImageBox{ padding: 0;}
+
+ .bannerTextBox h2,
+ .bannerTextBox p,
+ .bannerTextBox div{
+   text-align: center;
+ }
+
+ .offerBox{ -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column;}
+
+ .about{ -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column;}
+
+ .aboutTextBox .smallHeading,
+ .aboutTextBox p,
+ .aboutTextBox h3,
+ .aboutTextBox div{
+   text-align: center;
+ }
+
+ .serviceBox{ -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column;}
+ .serviceCard {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .serviceCard p{
+    margin: 0 auto; 
+    width: 90%;
+  }
+
+ .serviceCard div{ margin: 0 auto;}
+ .serviceCard h4,
+ .serviceCard p{
+   text-align: center;
+ }
+
+ .projectImageBox{ width: 47%;}
+
+ .testimonialsContent p,
+ .testimonialsContent div{ text-align: center;}
+
+ .quotesBox{ margin-bottom: 20px;}
+
+ .form{
+   width: 60%;
+   margin-top: 20px;
+ }
+
+ .links{ -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column;}
+ .links div{ width: 100%;}
+ .links h4,
+ .links img,
+ .links p,
+ .links li,
+ .responsiveImage{
+   text-align: center;
+ }
+
+ .contactTime li{ justify-content: space-between;}
+}
+
+/*----------- Surface duo --------------*/
+@media only screen and (max-width: 767px){
+  #header{ margin-top: 20px;}
+
+  .bannerImageBox img{
+    width: 350px;
+    height: auto;
+  }
+
+  .aboutImageBo img{
+    width: 300px;
+    height: auto;
+  }
+
+  .projectImageBox {width: 47%;}
+
+  .testimonialBox{ flex-direction: column; }
+
+  .quotesBox{ display: none;}
+
+  .testimonialsContent p,
+  .testimonialsContent div{
+    text-align: center;
+  }
+
+  .clientImage{ margin: 0 auto;}
+
+}
+
+/*----------- Mobile resolution --------------*/
+@media only screen and (max-width: 420px){
+  html{ font-size: 14px;}
+
+  #header{ margin-top: 20px;}
+  .bannerImageBox img{
+    width: 300px;
+    height: auto;
+  }
+
+  .aboutImageBo img{
+    width: 250px;
+    height: auto;
+  }
+
+  .projectsImageBoxes{ -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column;}
+  .projectImageBox{ width: 95%;}
+
+  .testimonialBox{ -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column;}
+
+  .quotesBox{ display: none;}
+
+  .testimonialsContent p,
+  .testimonialsContent div{
+    text-align: center;
+  }
+
+  .clientImage{ margin: 0 auto;}
+
+  .form{ width: 90%;}
+  input[type='email']{ 
+    width: 60%;
+    text-overflow: ellipsis;
+    
+    white-space: nowrap;
+    overflow: hidden;
+  }
+}
+
+/*----------- Galaxy Fold --------------*/
+@media only screen and (max-width: 320px){
+  html{font-size: 12px;}
+  .bannerImageBox img{
+    width: 250px;
+    height: auto;
+  }
+  .bannerImageBox{ padding: 0;}
+
+  .clientImage img{
+    width: 200px;
+    height: auto;
+  }
+
+  .form{ flex-direction: column;}
+  input[type='email']{
+    width: 100%;
+    padding: 10px 0;
+  }
+
+}
